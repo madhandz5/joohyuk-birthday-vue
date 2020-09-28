@@ -6,13 +6,7 @@
         :mapOptions="mapOptions"
         :initLayers="initLayers"
         @load="onLoad">
-      <naver-info-window
-          class="info-window"
-          @load="onWindowLoad"
-          :isOpen="info"
-          :marker="marker">
-      </naver-info-window>
-      <naver-marker :lat="37.5935882" :lng="127.016650" @click="onMarkerClicked" @load="onMarkerLoaded"/>
+      <naver-marker :lat="37.5935882" :lng="127.016650" @click="onMarkerClicked" @load="onMarkerLoaded"></naver-marker>
     </naver-maps>
   </div>
 
@@ -49,11 +43,12 @@ export default {
     {
       this.map = vue;
     },
-    onMarkerLoaded(vue) {
-      this.marker = vue.marker;
+    onMarkerLoaded(marker) {
+      this.marker = marker;
+      this.marker.setAnimation("BOUNCE");
     },
     onMarkerClicked(){
-      window.alert("clicked");
+      window.open('about:blank').location.href = "https://map.naver.com/v5/search/%EC%95%84%EB%A6%AC%EB%9E%91%ED%9E%90%ED%98%B8%ED%85%94/place/37082113?c=14135638.1828914,4522520.9886634,13,0,0,0,dh&placePath=%3Fentry%253Dpll%2526";
     }
   }
 }
