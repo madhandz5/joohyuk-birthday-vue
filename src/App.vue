@@ -1,12 +1,19 @@
 <template>
-  <Home/>
+  <div class="home">
+    <Invitation/>
+  </div>
 </template>
+
 <script>
-import Home from '@/views/Home.vue'
+// @ is an alias to /src
+import Invitation from '@/components/Invitation.vue'
 
 export default {
+  name: 'App',
   components: {
-    Home
+    Invitation
+  },
+  mounted() {
   }
 }
 </script>

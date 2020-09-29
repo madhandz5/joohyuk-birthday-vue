@@ -2,7 +2,6 @@
   <div id="map">
     <naver-maps
         :height="height"
-        :width="width"
         :mapOptions="mapOptions"
         :initLayers="initLayers"
         @load="onLoad">
@@ -16,7 +15,6 @@ export default {
   name: 'Map',
   data() {
     return {
-      width: "100%",
       height: 400,
       info: true,
       marker: null,
@@ -27,8 +25,8 @@ export default {
       mapOptions: {
         lat: 37.5935881,
         lng: 127.016650,
-        zoom: 19,
-        zoomControl: true,
+        zoom: 17,
+        zoomControl: false,
         zoomControlOptions: {position: 'TOP_RIGHT'},
         mapTypeControl: true,
       },
