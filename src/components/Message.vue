@@ -5,7 +5,7 @@
       <div v-if="visitor.attend">
         <v-card
             class="mx-auto"
-            color="#ebc634"
+            color="blue"
             dark
         >
           <v-card-title>
@@ -38,7 +38,7 @@
       <div v-else>
         <v-card
             class="mx-auto"
-            color="blue"
+            color="#ebc634"
             dark
         >
           <v-card-title>
