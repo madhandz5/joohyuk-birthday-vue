@@ -29,7 +29,7 @@
                 <v-icon class="mr-1">
                   mdi-clock-time-two-outline
                 </v-icon>
-                <span class="subheading mr-2">{{ new Date(visitor.time).toLocaleTimeString() }}</span>
+                <span class="subheading mr-2 text-right">{{ new Date(visitor.time).toLocaleDateString()}}<br/>{{new Date(visitor.time).toLocaleTimeString()}}</span>
               </v-row>
             </v-list-item>
           </v-card-actions>
@@ -62,7 +62,7 @@
                 <v-icon class="mr-1">
                   mdi-clock-time-two-outline
                 </v-icon>
-                <span class="subheading mr-2">{{ new Date(visitor.time).toLocaleTimeString() }}</span>
+                <span class="subheading mr-2 text-right">{{ new Date(visitor.time).toLocaleDateString()}}<br/>{{new Date(visitor.time).toLocaleTimeString()}}</span>
               </v-row>
             </v-list-item>
           </v-card-actions>

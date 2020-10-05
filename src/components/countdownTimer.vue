@@ -1,5 +1,5 @@
 <template>
-  <Countdown end="October 9, 2020"></Countdown>
+  <Countdown end="12:00 October 9, 2020"></Countdown>
 </template>
 <script>
 import Countdown from 'vuejs-countdown'

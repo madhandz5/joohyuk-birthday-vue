@@ -30,7 +30,7 @@
             </v-toolbar-title>
           </v-list-item-title>
           <v-list-item-subtitle>
-            2020년 10월 9일
+            2020년 10월 9일 (금) 정오
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -292,7 +292,7 @@ export default {
         {
           icon: 'mdi-calendar-month-outline',
           title: '일시',
-          text: '2020년 10월 9일 (금)',
+          text: '2020년 10월 9일 (금) 오후 12:00',
         },
         {
           icon: 'mdi-map-marker',
